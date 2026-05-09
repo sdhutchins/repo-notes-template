@@ -1,5 +1,17 @@
 _answers_file: .copier-answers.repo-notes.yml
 
+_message_after_copy: |
+  Repo notes created in `{{ note_folder_name }}`.
+
+  If these notes should stay private, add these lines to the destination repo's `.gitignore`:
+
+  {{ note_folder_name }}/
+  .copier-answers.repo-notes.yml
+
+  Keep `.copier-answers.repo-notes.yml` locally if you want to run:
+
+  copier update -a .copier-answers.repo-notes.yml
+
 _exclude:
   - "/README.md"
   - "copier.yaml"
@@ -20,7 +32,7 @@ note_folder_name:
 project_name:
   type: str
   help: Human-readable project name shown in the private notes README.
-  default: "{{ _copier_conf.dst_path.name }}"
+  default: "{{ _folder_name }}"
 
 project_stage:
   type: str
