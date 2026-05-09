@@ -1,0 +1,50 @@
+_answers_file: .copier-answers.repo-notes.yml
+
+_exclude:
+  - "/README.md"
+  - "copier.yaml"
+  - "copier.yml"
+  - "~*"
+  - "*.py[co]"
+  - "__pycache__"
+  - ".git"
+  - ".DS_Store"
+  - ".svn"
+  - ".gitignore"
+
+note_folder_name:
+  type: str
+  help: Folder for private notes (often ignored by tooling or kept out of main docs).
+  default: "_private"
+
+project_name:
+  type: str
+  help: Human-readable project name shown in the private notes README.
+  default: "{{ _copier_conf.dst_path.name }}"
+
+project_stage:
+  type: str
+  help: Current project stage.
+  choices:
+    - exploratory
+    - active analysis
+    - manuscript or thesis writing
+    - maintenance
+  default: "exploratory"
+
+primary_output:
+  type: str
+  help: Main thing these notes are supporting.
+  choices:
+    - thesis chapter
+    - manuscript
+    - analysis repo
+    - package or tool
+    - grant or proposal
+    - exploratory project
+  default: "analysis repo"
+
+note_folder_description:
+  type: str
+  help: Short blurb shown at the top of the private-folder README (purpose, audience, constraints).
+  default: "Working notes and stubs that track how this project is framed, analyzed, interpreted, and coordinated. Not a substitute for IRB documentation, published methods, or citation-grade references—link out where those live."

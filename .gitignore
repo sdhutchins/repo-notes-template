@@ -1,0 +1,3 @@
+# Un-ignore paths that match overly broad patterns in global gitignore (e.g. *notes.md).
+!**/tracking/notes.md
+!**/project_notes.md

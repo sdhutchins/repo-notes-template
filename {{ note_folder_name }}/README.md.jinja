@@ -1,0 +1,63 @@
+# {{ project_name }} private research notes
+
+{{ note_folder_description }}
+
+| Field | Value |
+|-------|-------|
+| Project stage | {{ project_stage }} |
+| Primary output | {{ primary_output }} |
+| Notes folder | `{{ note_folder_name }}` |
+
+This folder is meant to evolve alongside structured project documentation.
+
+It mirrors the lifecycle sections used in broader research-documentation templates—for example [**Research Project Documentation** (PhD research template overview)](https://www.shauritahutchins.com/phd-research-template/) — so you always have scratch space beside the same mental model (`research_design/` → Methods → Results → Tracking → Collaboration).
+
+## How to use this folder
+
+Fill in stubs as you think; nothing here has to publish. Prefer links to figures, repos, notebooks, docs, tickets, meeting notes dates, advisor feedback, datasets, cohort IDs (using whatever privacy rules apply), draft paper sections, slides, posters, timelines, QC checks, hypotheses, pitfalls, ethics notes, tooling decisions—whatever keeps you honest about what you believed and decided *when*. Update when those beliefs change.
+
+| Area | In this repo | Mirrors (conceptually) |
+|------|----------------|-------------------------|
+| **Research framing** | `research_design/` | Research Design section on [the template overview](https://www.shauritahutchins.com/phd-research-template/) |
+| **How you analyze** | `methods/` (+ optional draft in `notes/`) | Methods |
+| **What you observe & say** | `results/` (+ optional sketch in `notes/`) | Results |
+| **How the project evolves** | `tracking/` (+ sprints/next steps under `notes/` if useful) | Tracking |
+| **People & continuity** | `collaboration/` | Collaboration |
+
+## Quick prompts (copy under each stub)
+
+*(Replace bullets with prose; erase what does not apply.)*
+
+1. **What is one sentence this project proves or delivers?**
+
+2. **What would convince you you're wrong—or right?**
+
+3. **What assumptions are hiding in your methods or pipelines?**
+
+4. **What's the weakest link in reproducibility today?**
+
+5. **What's the honest status: blocked / exploratory / reproducible-from-data / ready-to-publish?**
+
+6. **What does your advisors & collaborators need next from you**, and what's your ask?
+
+7. **What changes if you swapped tools, cohorts, or scope?**
+
+## Reproducibility Checklist
+
+*(Optional light checklist—adapt to how you organize.)*
+
+- [ ] Thesis / paper / milestone title + target venue or defense window.
+- [ ] IRB / DUA / cohort access status (omit sensitive identifiers here).
+- [ ] Canonical data snapshots + versioning (URLs, hashes, access dates—or where documented).
+- [ ] Main analysis entry points (notebook, pipeline, Dockerfile, repo links).
+- [ ] Computing environment captured (package lockfile, container tag, module list, or session info).
+- [ ] Sample metadata and inclusion / exclusion criteria documented.
+- [ ] Preprocessing, normalization, filtering, and QC thresholds recorded.
+- [ ] Controls, null models, baselines, or comparison groups defined.
+- [ ] Random seeds, split definitions, and rerun-sensitive settings captured where relevant.
+- [ ] Expected output locations named for key tables, figures, logs, and intermediate files.
+- [ ] Figure / table provenance traceable back to scripts, notebooks, or commands.
+- [ ] Known limitations, failure modes, and interpretation risks written down.
+- [ ] Decisions that changed scope, methods, or conclusions linked to dates or meetings.
+- [ ] Open risks + owners + deadlines.
+- [ ] Next synchronous touchpoint date + asks.
