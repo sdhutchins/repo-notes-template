@@ -28,9 +28,11 @@ copier update -a .copier-answers.repo-notes.yml
 
 ## How do you track these notes?
 
-I keep most of my notes in [Joplin](https://joplinapp.org/), and since this is markdown formatted, I have a [script]() 
-that just copies these folders to a folder that is aggregated by project.
+I keep most of my notes in [Joplin](https://joplinapp.org/), and since this is markdown formatted, I have a [script](https://gist.github.com/sdhutchins/da3e92eedaf36d5338c3ac9da5940434) 
+that just copies these folders to a folder that is aggregated by project. The script uses [rclone](https://rclone.org/downloads/).
 
 This allows me to copy this easily into joplin or open the folder in other tools or whatever I want to do.
 
 You could probably find a way to automate or copy this into Joplin (I will solve this later).
+
+If you use Obsidian, it's a lot easier to have a `projects` level folder that it will track.
